@@ -538,6 +538,7 @@ def main():
             return rc
 
     # Forward the command line arguments to the container.
+    logger.info(f"arguments passed {sys.argv}")
     return di.send_command(sys.argv[1:])
 
 
